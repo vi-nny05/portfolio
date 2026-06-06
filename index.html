@@ -1,0 +1,404 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Vinh | Front-End Developer &amp; Designer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#201f1f",
+                        "on-error-container": "#ffdad6",
+                        "secondary": "#c8c6c5",
+                        "surface-bright": "#3a3939",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "primary-container": "#e2e2e2",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary": "#ffffff",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-primary-fixed-variant": "#454747",
+                        "on-secondary": "#313030",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface": "#141313",
+                        "surface-variant": "#353434",
+                        "on-secondary-container": "#b7b5b4",
+                        "on-primary": "#2f3131",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary-container": "#474746",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "inverse-primary": "#5d5f5f",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-tertiary": "#2f3131",
+                        "outline-variant": "#444748",
+                        "surface-dim": "#141313",
+                        "inverse-surface": "#e5e2e1",
+                        "background": "#141313",
+                        "surface-container-highest": "#353434",
+                        "on-primary-container": "#636565",
+                        "outline": "#8e9192",
+                        "on-tertiary-container": "#636565",
+                        "primary": "#ffffff",
+                        "tertiary-container": "#e2e2e2",
+                        "on-surface": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "surface-tint": "#c6c6c7",
+                        "on-surface-variant": "#c4c7c8",
+                        "primary-fixed": "#e2e2e2",
+                        "on-primary-fixed": "#1a1c1c",
+                        "on-background": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c6c6c7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-padding-mobile": "64px",
+                        "section-padding-desktop": "120px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            transform: translateY(-4px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tag-pill {
+            background: rgba(255, 255, 255, 0.05);
+            transition: background 0.3s ease;
+        }
+        .tag-pill:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-container-max rounded-full border border-white/10 z-50 bg-background/80 backdrop-blur-xl shadow-2xl flex justify-between items-center px-8 py-3">
+<div class="font-headline-lg text-2xl font-black text-primary">Nguyễn Kỳ Vinh</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold border-b border-primary pb-1" href="#home">Home</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services">Services</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#about">About</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#skills">Skills</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#projects">Projects</a>
+</nav>
+<button class="bg-primary text-background font-label-sm text-label-sm uppercase tracking-widest px-6 py-2 rounded-full hover:scale-105 active:scale-95 transition-all duration-300">
+            Let’s Talk
+        </button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center pt-[120px] px-gutter" id="home">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-stack-lg">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-primary"><br></p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
+                        Nguyễn Kỳ Vinh</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Đại học Kinh tế - Đại học quốc gia Hà Nội</p>
+<div class="flex flex-wrap items-center gap-6 pt-stack-md">
+<button class="bg-primary text-background font-label-sm text-label-sm uppercase tracking-widest px-8 py-4 rounded-full hover:scale-105 active:scale-95 transition-all">
+                            Download CV
+                        </button>
+<div class="flex gap-4">
+<a class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 hover:border-white/30 transition-all" href="#">
+<span class="material-symbols-outlined text-primary">group</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 hover:border-white/30 transition-all" href="#">
+<span class="material-symbols-outlined text-primary">code</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 hover:border-white/30 transition-all" href="#">
+<span class="material-symbols-outlined text-primary">public</span>
+</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/10 rounded-3xl blur-3xl group-hover:bg-primary/20 transition-all duration-700"></div>
+<img alt="Vinh Profile" class="relative z-10 w-full aspect-[4/5] object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmL8YZUxiFUmLEjViH6vqat4-TqXZcQWVCuJlSPbnhi6X4dHRM6s07HsLkaYiIo94Mk3YrTbit868CqoZaGJbrNQ87JR4N49EEyMRj0Cyi8z5IqJAtOtB9b7gmJzBgVXPY6mQF3jGZ2xALNa-U7M6DR5oRoVW3GuLxWmh1aPQH55N9OBJJoFsMvL50NTHX_y-P8y0cnRees9jn5byUj5u733GgB1GqBSTQJCr3bzEbSr5xTsnNeBRYGACvR9hpi_ZMI36cSxwUjcCcuA">
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-padding-desktop px-gutter" id="services">
+<div class="max-w-container-max mx-auto text-center space-y-stack-md mb-20">
+<h2 class="font-headline-lg text-headline-lg text-primary">Services</h2>
+<p class="font-body-lg text-xl font-bold text-on-surface-variant tracking-widest uppercase">Kinh nghiệm thực tiễn</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service Cards -->
+<div class="glass-card p-stack-lg rounded-2xl flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">brush</span>
+<h3 class="font-headline-lg text-xl mb-4">UI/UX Website Design</h3>
+<p class="text-on-surface-variant mb-8 flex-grow text-justify">Thiết kế website và hỗ trợ trong quản lý các nội dung website</p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="tag-pill px-3 py-1 rounded-full font-label-sm text-xs">Modern layouts</span>
+<span class="tag-pill px-3 py-1 rounded-full font-label-sm text-xs">Responsive design</span>
+</div>
+</div>
+<div class="glass-card p-stack-lg rounded-2xl flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">code</span>
+<h3 class="font-headline-lg text-xl mb-4">Content creator</h3>
+<p class="text-on-surface-variant mb-8 flex-grow text-justify">Thiết kế video, hình ảnh tạo nội dung phù hợp cho các content phù hợp với doanh nghiệp.</p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="tag-pill px-3 py-1 rounded-full font-label-sm text-xs">Clean HTML/CSS</span>
+<span class="tag-pill px-3 py-1 rounded-full font-label-sm text-xs">Smooth interactions</span>
+</div>
+</div>
+<div class="glass-card p-stack-lg rounded-2xl flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">speed</span>
+<h3 class="font-headline-lg text-xl mb-4">Chạy quảng cáo</h3>
+<p class="text-on-surface-variant mb-8 flex-grow text-justify">Chạy quảng cáo trên nhiều nền tảng bao gồm Facebook, Google, Gmail, TikTok Business.</p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="tag-pill px-3 py-1 rounded-full font-label-sm text-xs">Speed optimization</span>
+<span class="tag-pill px-3 py-1 rounded-full font-label-sm text-xs">Asset efficiency</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-padding-desktop bg-surface-container-lowest" id="about">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+<div class="space-y-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary">Mục tiêu nghề nghiệp</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant text-justify leading-loose">" Tôi có mong muốn cơ hội làm việc tại một môi trường chuyên nghiệp. Cùng với tinh thần cầu thị và kỳ vọng tích luỹ thêm kinh nghiệm thực tiễn, nâng cao kỹ năng văn phòng - học hỏi từ con số 0 để hoàn thiện bản thân và mang lại góc nhìn sáng tạo cho doanh nghiệp. "</p>
+<div class="pt-8 space-y-stack-md">
+<h3 class="font-label-sm text-label-sm uppercase tracking-widest text-primary">My Approach</h3>
+<div class="space-y-4">
+<div class="glass-card p-4 rounded-xl flex items-center gap-4">
+<span class="w-10 h-10 flex items-center justify-center bg-primary text-background rounded-lg font-bold">01</span>
+<span class="font-body-md">Được tham gia các dự án lớn và góp mặt trong xây dựng doanh nghiệp</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-4">
+<span class="w-10 h-10 flex items-center justify-center bg-primary text-background rounded-lg font-bold">02</span>
+<span class="font-body-md">Được quản lý và truy cập vào các data quan trọng để tiếp quản</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-4">
+<span class="w-10 h-10 flex items-center justify-center bg-primary text-background rounded-lg font-bold">03</span>
+<span class="font-body-md">Cơ hội thăng tiến lớn và chăm chỉ đạt KPI công việc</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:sticky lg:top-[120px] grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="text-center p-stack-lg glass-card rounded-3xl flex flex-col justify-center items-center aspect-square">
+<div class="font-display-lg-mobile text-primary mb-2">02+</div>
+<div class="font-label-sm text-xs uppercase tracking-widest text-on-surface-variant">năm kinh nghiệm trong doanh nghiệp</div>
+</div>
+<div class="text-center p-stack-lg glass-card rounded-3xl flex flex-col justify-center items-center aspect-square">
+<div class="font-display-lg-mobile text-primary mb-2">15+</div>
+<div class="font-label-sm text-xs uppercase tracking-widest text-on-surface-variant">Dự án chuyên nghiệp</div>
+</div>
+<div class="col-span-full h-[400px] rounded-3xl overflow-hidden relative group">
+<img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:scale-105" data-alt="A high-end, dark workspace setting featuring a modern laptop showing lines of code, a clean minimalist desk, and professional studio lighting that emphasizes textures and depth. The aesthetic is strictly dark mode, with subtle highlights in cool whites and deep blacks, reflecting a sense of technical mastery and design precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbP2hQtiHJ0kdNEm9H31oc73Xp0xpZZpj90sUb4ebiUUCwla1aqH15WDssP3o7Ry_MtZFPWziAoKKvUKCmJQRX5tY8-pTUoTfmsednWEE9oG1Oo4fmsSvlMwkfwScv3H1K89br6H7g-rIo5Y4AsPlPUZCNAWIqPR1xU5kKVw9tw6hvkB8MvQFUQbNyiNjwIr5YkpGroK5r47XLy3x_wcbgW-gfJWrjkIyseMmSzB4QCLleOpPPUOp4Y93iV9q_hdsblutzJQufWbvp5A">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-section-padding-desktop px-gutter" id="skills">
+<div class="max-w-container-max mx-auto text-center space-y-stack-md mb-20">
+<h2 class="font-headline-lg text-headline-lg text-primary">Skills</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Kỹ năng văn phòng</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Skill Cards -->
+<div class="glass-card p-stack-lg rounded-3xl">
+<h3 class="font-headline-lg text-xl mb-6">Khả năng giao tiếp tiếng Anh thông thaọ</h3>
+</div>
+<div class="glass-card p-stack-lg rounded-3xl">
+<h3 class="font-headline-lg text-xl mb-6">Sử dụng thành thạo các công cụ Microsoft Office</h3>
+</div>
+<div class="glass-card p-stack-lg rounded-3xl">
+<h3 class="font-headline-lg text-xl mb-6">Kỹ năng phân tích dữ liệu, chạy mô hình dữ liệu</h3>
+</div>
+<div class="glass-card p-stack-lg rounded-3xl">
+<h3 class="font-headline-lg text-xl mb-6">Sử dụng AI hiệu quả</h3>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-section-padding-desktop px-gutter bg-surface-container-low" id="projects">
+<div class="max-w-container-max mx-auto text-center space-y-stack-md mb-20">
+<h2 class="font-headline-lg text-headline-lg text-primary">Projects</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Selected works and personal projects</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Project Cards -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A cinematic, high-contrast mockup of a personal portfolio website displayed on a wide 5K monitor. The screen showcases sophisticated dark mode layouts, elegant serif typography, and fluid, high-end motion graphics. The environment is dark and professional, with subtle reflections and a shallow depth of field that keeps the focus on the digital interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJrZzBUrp1A01VJNn7F_2NQKpQosC2Wr4SEJzPwHiHlEU0BiGQeKs3VggHAUAoRe2a1WwSetQKkPli9LWLalzRv5bp7WxOG-RT3YipXkjkVbr0goS-FOWNFcmePleu3ZmhWzDM0FnTzmbO4X7CCDzQJcZcnjJWZ97FV_VJeP56HWsCYYHqgZs5IYYcgBvgOhvr3ue8-hbQk6n3zaAGdCxblWVKK5JrsH_MwJYfZnWHL2fDDutQHSXsfcxocxogBzp4CUqtWcvnsws">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+</div>
+<h3 class="font-headline-lg text-2xl text-primary mb-3">&nbsp;&nbsp;<span class="" style="font-size: 1.5rem; font-weight: inherit; letter-spacing: 0px;">Website&nbsp;</span><span class="" style="font-size: 1.5rem; font-weight: inherit; letter-spacing: 0px;">Portfolio cá nhân Website</span><br></h3>
+<p class="text-on-surface-variant mb-4">Các website tôi đã xây dựng và thiết kế</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, corporate landing page interface being designed in a professional software environment. The layout features bold white headings against deep charcoal backgrounds, structured grids, and vibrant blue accents. The visual style is sleek, modern, and data-driven, emphasizing clarity and professional impact in a dark-themed setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK67D8yxl4b4d4VuNfKw2oabp2AGHLVVyizy3BI7VyuOGEIvCVC0PiwHCOb3sZva_O4QrmrRgVy4LL72BjF_Qz0ieD4gmcuxRWGXC4OJpmx8MqVWd7JmjuBrkgpLluW6WdjtJiFgymO1M-1sQ89MxlVR1L1mADUKkPUHrfTwy5UqnpYKe6CoLFlBfg0Vpw-eVxdGT1rWnMCjuGxJ8mIy4w36BKpTleiTXbV8VW9BLdtLRDQXrF486dlGvzgy7N86NTpirA6WyDObk">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+</div>
+<h3 class="font-headline-lg text-2xl text-primary mb-3">Business Landing Page</h3>
+<p class="text-on-surface-variant mb-4">Các thành tựu landing page tôi xây dựng</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist academic research website interface showing complex data visualizations and clean, readable text hierarchies. The design relies on a strict black and white color palette, using subtle gray tones to separate information sections. The atmosphere is intellectual and precise, featuring sharp edges and refined spacing that reflects a high standard of research quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGQIFN3DpE07b4uyRjK9rwlDmz3bOzPgUkAnWsX-1H1EydjSQiLQLmoJo33wtE5CzAKEfGSB9ZtpLne7Uccs44XcbfAporQCyuIbkKM-MheW6m-SEzc2ieKp0alSPNL90A3W8Q1hMPxufUmwrwUHQykdBzEGnc8R9a1RFicZjVFAiZGK_mLOt6YhoOqr_tRiudTRbSUH6QdiWAvhyb3AlnVxfHtEtm-rVNxaaddGT1gjI_Kw8XyMNT5dJUtZhSY3dUTr4T_AYVJV8">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+</div>
+<h3 class="font-headline-lg text-2xl text-primary mb-3">Thành tựu học thuật&nbsp;</h3>
+<p class="text-on-surface-variant mb-4">Thành tựu về giải Nghiên cứu Khoa học học thuật</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant and engaging social media dashboard interface displayed on a tablet device. The design incorporates elegant dark mode backgrounds with soft, glowing elements that highlight user content. The layout is asymmetric and dynamic, using glassmorphism effects to create depth and a sophisticated, futuristic user experience that appeals to modern content creators." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDob0DpjeLXmXv0gEWAQYv7WapGywvzhEIVM58a0EXg_dirZR_8gPbf5WM5n3rcB13odSnWgWr7hiZgRjoPBH8c-iFz-Xe1Iyyxs-R1yGH9qRiag2UUCS7R1J6EBSupMRDUjHMpUpEizI6-HAVlfFUCN5c566C1rVhkrAYHsfYo81CX7eivdR-T6dXROZ2CJgypApKGY-L57QubUVQwppP5e5TnNjJherLWsyiVJkQPBMfczIMB4hHxEEOpw0JXAsGNSMZZYOomolM">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+</div>
+<h3 class="font-headline-lg text-2xl text-primary mb-3">Social Media Content Page</h3>
+<p class="text-on-surface-variant mb-4">Các thành tựu về kĩ năng chạy quảng cáo và content creator</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-padding-desktop px-gutter" id="contact">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div class="space-y-stack-lg">
+<h2 class="font-display-lg-mobile text-primary">Thông tin cá nhân</h2>
+<div class="space-y-6 pt-stack-md">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<div class="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest">Email</div>
+<div class="font-headline-lg text-xl">vinhbcng@gmail.com</div>
+</div>
+</div><div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<div class="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest">Phone</div>
+<div class="font-headline-lg text-xl">0941893788</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<div class="font-label-sm text-xs text-on-surface-variant uppercase tracking-widest">Location</div>
+<div class="font-headline-lg text-xl">Hanoi, Vietnam</div>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-stack-lg rounded-3xl">
+<form class="space-y-stack-md">
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Họ Tên</label>
+<input class="w-full bg-transparent border-b border-white/20 focus:border-primary focus:ring-0 transition-colors py-4 text-primary" placeholder="Enter your name" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Email</label>
+<input class="w-full bg-transparent border-b border-white/20 focus:border-primary focus:ring-0 transition-colors py-4 text-primary" placeholder="Enter your email" type="email">
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">message</label>
+<textarea class="w-full bg-transparent border-b border-white/20 focus:border-primary focus:ring-0 transition-colors py-4 text-primary resize-none" placeholder="How can I help?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-background font-label-sm text-label-sm uppercase tracking-widest py-5 rounded-full hover:scale-[1.02] active:scale-95 transition-all mt-8" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<script>
+        // Simple scroll spy for active navigation state
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold', 'border-b', 'border-primary', 'pb-1');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-primary', 'font-bold', 'border-b', 'border-primary', 'pb-1');
+                    link.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+
+
+</body></html>
